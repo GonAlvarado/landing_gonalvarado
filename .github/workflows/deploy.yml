@@ -30,7 +30,7 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
-          source: "dist/landing_gonalvarado/*"
+          source: "dist/landing_gonalvarado/browser/*"
           target: "/var/www/gonalvarado.com"
           port: 5959
 
