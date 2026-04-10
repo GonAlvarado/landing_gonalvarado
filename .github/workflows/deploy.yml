@@ -24,11 +24,6 @@ jobs:
       - name: Build producción
         run: npm run build -- --configuration production
         
-      - name: Debug build output
-        run: |
-          echo "=== DIST ==="
-          ls -R dist
-        
       - name: Deploy al VPS
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -37,6 +32,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           source: "dist/landing_gonalvarado/browser/*"
           target: "/var/www/gonalvarado.com"
+          strip_components: 3
           port: 5959
 
       - name: Reload Nginx
