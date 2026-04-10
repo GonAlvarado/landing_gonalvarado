@@ -1,0 +1,10 @@
+    <mat-card class="item">
+      <mat-card-title>{{ project().name }}</mat-card-title>
+      <mat-card-content>
+        <p>{{ project().description }}</p>
+        <small>{{ project().tech.join(', ') }}</small>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button [href]="project().github" target="_blank">GitHub</a>
+      </mat-card-actions>
+    </mat-card>

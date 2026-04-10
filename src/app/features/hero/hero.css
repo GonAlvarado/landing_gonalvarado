@@ -1,0 +1,23 @@
+.hero {
+    background: url(./../../../../public/hero-background2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+  font-size: 4rem;
+  color: #F57C00;
+  opacity: 0.9;
+}
+
+h2{
+  font-size: 2rem;
+  color: white;
+  opacity: 0.8;
+}
