@@ -23,7 +23,12 @@ jobs:
 
       - name: Build producción
         run: npm run build -- --configuration production
-
+        
+      - name: Debug build output
+        run: |
+          echo "=== DIST ==="
+          ls -R dist
+        
       - name: Deploy al VPS
         uses: appleboy/scp-action@v0.1.7
         with:
