@@ -26,8 +26,12 @@ h2{
   gap: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  h2{
+    font-size: 2rem;
   }
 }

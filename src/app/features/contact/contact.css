@@ -13,6 +13,7 @@ h2{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  gap: 16px;
 }
 
 .contact-item{
@@ -40,4 +41,14 @@ a .icon{
 
 a:hover .icon {
   color: rgba(245, 124, 0, 0.7);
+}
+
+@media (max-width: 600px) {
+  h2{
+    font-size: 2rem;
+  }
+
+  .contact-container{
+    flex-direction: column;
+  }
 }

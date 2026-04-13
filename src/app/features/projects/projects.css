@@ -8,3 +8,9 @@ h2{
   font-size: 3rem;
   padding: 30px;
 }
+
+@media (max-width: 600px) {
+  h2{
+    font-size: 2rem;
+  }
+}

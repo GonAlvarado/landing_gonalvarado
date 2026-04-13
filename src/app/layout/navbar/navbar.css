@@ -11,3 +11,9 @@
 .icon{
   margin-right: 10px;
 }
+
+@media (max-width: 600px) {
+  .ancla{
+    display: none;
+  }
+}
